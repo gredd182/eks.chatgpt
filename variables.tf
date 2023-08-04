@@ -20,28 +20,12 @@ variable "availability_zones" {
   description = "List of availability zones for public subnets."
 }
 
-variable "instance_ami" {
-  description = "AMI ID for the EC2 instances."
-}
-
 variable "instance_type" {
   description = "EC2 instance type for the EKS nodes."
 }
 
-variable "min_nodes" {
-  description = "Minimum number of nodes in the node group."
-}
-
-variable "max_nodes" {
-  description = "Maximum number of nodes in the node group."
-}
-
 variable "desired_capacity" {
   description = "Desired capacity of the node group."
-}
-
-variable "ssh_key_name" {
-  description = "SSH key name for EC2 instances."
 }
 
 variable "tags" {
